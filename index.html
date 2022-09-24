@@ -6,11 +6,23 @@
 	<link rel="shortcut icon" type="image/ico" href="img/logo.png">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/index.css">
+	<script src="https://use.fontawesome.com/30155533f0.js"></script>
+	<script type="text/javascript">
+		function mobile() {
+			var bars = document.getElementById("mnav");
+			if(bars.className === "mnav") {
+				bars.className += " responsive";
+			} else {
+				bars.className = "mnav";
+			}
+		}
+	</script>
 </head>
 <body>
 	<header>
 		<div class="nav">
-			<ul class="nav-items" id="nav-items"><a>
+			<ul class="nav-items" id="nav-items">
+				<a><li onclick="mobile()" class="icon fa fa-bars fa-2x"></li></a>
 				<a href="page1.html"><li class="h">
 					<div class="overlay"></div>
 					Utarid
@@ -44,8 +56,24 @@
 					<div class="overlay"></div>
 					Neptun
 				</li></a>
-			</a>
 			</ul>
+			<div class="mnav" id="mnav">
+				<a href="page1.html"><li class="i">
+					Utarid
+				</li></a>
+				<a href="page2.html"><li class="i">
+					Zuhrah
+				</li></a>
+				<a href="#games"><li class="i">
+					Bumi
+				</li></a>
+				<a href="#contact"><li class="i">
+					Marikh
+				</li></a>
+				<a href="index.html"><li class="i">
+					Home
+				</li></a>
+			</div>
 			</div>
 
 		<div class="hero" id="main">
